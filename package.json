@@ -1,0 +1,8 @@
+{
+  "name": "template2js",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "underscore": "~1.4.4"
+  }
+}
