@@ -7,14 +7,14 @@ var args = argv.run();
 // console.log(args);
 
 var inputFile = args.targets[0];
-var inputNameBegin = input.lastIndexOf('/') + 1;
-var inputNameEnd = input.lastIndexOf('.');
-var inputName = input.slice(inputNameBegin, inputNameEnd);
+var inputNameBegin = inputFile.lastIndexOf('/') + 1;
+var inputNameEnd = inputFile.lastIndexOf('.');
+var inputName = inputFile.slice(inputNameBegin, inputNameEnd);
 // console.log(inputNameBegin);
 // console.log(inputNameEnd);
 // console.log(inputName);
 
-var inputData = fs.readFileSync(inputFile, {encoding: 'utf8'});
+var inputData = fs.readFileSync(inputFile, 'utf8');
 // console.log(inputData);
 
 var templates = {};
@@ -25,6 +25,6 @@ _.each(templates, function(template, name) {
 	data += 'template[\'' + name + '\']=' + _.template(template).source.replace(/\n/g, '') + ';\n';
 });
 
-var outputFile = args.targets[1] || input.slice(0, inputNameEnd) + '.js';
+var outputFile = args.targets[1] || inputFile.slice(0, inputNameEnd) + '.js';
 
-fs.writeFileSync(outputFile, data, {encoding: 'utf8'});
+fs.writeFileSync(outputFile, data, 'utf8');
