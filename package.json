@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {},
   "devDependencies": {
-    "underscore": "~1.4.4"
+    "underscore": "~1.4.4",
+    "argv": "~0.0.1"
   }
 }
