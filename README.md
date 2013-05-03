@@ -21,6 +21,8 @@ Installing template2js
 
 ```
 wget https://raw.github.com/eqot/template2js/master/template2js.js
+wget https://raw.github.com/eqot/template2js/master/package.json
+npm install
 ```
 
 
