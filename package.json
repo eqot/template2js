@@ -4,6 +4,9 @@
   "dependencies": {},
   "devDependencies": {
     "underscore": "~1.4.4",
-    "argv": "~0.0.1"
+    "argv": "~0.0.1",
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.4.3",
+    "matchdep": "~0.1.2"
   }
 }
