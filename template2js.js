@@ -3,6 +3,8 @@ var argv = require('argv');
 var _ = require('underscore');
 var fs = require('fs');
 
+argv.info('Usage: node template2js.js [options] <input> [<output>]');
+
 argv.option({
     name: 'output',
     short: 'o',
@@ -13,6 +15,12 @@ argv.option({
 
 var args = argv.run();
 // console.log(args);
+
+if (args.targets.length === 0) {
+    argv.help();
+    return;
+}
+
 isAmd = args.options.output === 'amd';
 // console.log(isAmd);
 
