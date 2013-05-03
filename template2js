@@ -4,14 +4,14 @@ var argv = require('argv');
 var _ = require('underscore');
 var fs = require('fs');
 
-argv.info('Usage: node template2js.js [options] <input> [<output>]');
+argv.info('Usage: template2js [options] <input> [<output>]');
 
 argv.option({
     name: 'output',
     short: 'o',
     type: 'string',
     description: 'Specifies output type (amd)',
-    example: "'template2js.js -o amd' or 'template2js.js --output=amd'"
+    example: "'template2js -o amd' or 'template2js --output=amd'"
 });
 
 var args = argv.run();

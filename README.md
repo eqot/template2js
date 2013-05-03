@@ -20,7 +20,7 @@ Installing template2js
 ----------------------
 
 ```
-wget https://raw.github.com/eqot/template2js/master/template2js.js
+wget https://raw.github.com/eqot/template2js/master/template2js
 wget https://raw.github.com/eqot/template2js/master/package.json
 npm install
 ```
@@ -30,10 +30,10 @@ Usage
 -----
 
 ```
-node template2js.js [options] <input> [<output>]
+template2js [options] <input> [<output>]
 ```
 
-Using just ```node template2js.js <input>``` will output a file which replaces input file's extension with .js.
+Using just ```template2js <input>``` will output a file which replaces input file's extension with .js.
 
 
 License
