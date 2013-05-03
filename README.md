@@ -28,7 +28,7 @@ Usage
 -----
 
 ```
-node template2js.js [-o amd] <input> [<output>]
+node template2js.js [options] <input> [<output>]
 ```
 
 Using just ```node template2js.js <input>``` will output a file which replaces input file's extension with .js.
