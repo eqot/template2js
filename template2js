@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 var argv = require('argv');
 var _ = require('underscore');
 var fs = require('fs');
@@ -11,7 +13,7 @@ argv.option({
     short: 'o',
     type: 'string',
     description: 'Specifies output type (amd)',
-    example: "'template2js -o amd' or 'template2js --output=amd'"
+    example: '\'template2js -o amd\' or \'template2js --output=amd\''
 });
 
 var args = argv.run();
@@ -22,7 +24,7 @@ if (args.targets.length === 0) {
     return;
 }
 
-isAmd = args.options.output === 'amd';
+var isAmd = args.options.output === 'amd';
 // console.log(isAmd);
 
 var inputFile = args.targets[0];
