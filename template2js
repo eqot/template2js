@@ -43,7 +43,7 @@ templates[inputName] = inputData;
 
 var data = '';
 if (isAmd) {
-    data += '/*global define */\ndefine([],funciton(){\n';
+    data += '/*global define */\ndefine([],function(){\n';
 }
 data += 'var template = {};\n';
 _.each(templates, function(template, name) {
